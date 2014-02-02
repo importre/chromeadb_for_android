@@ -32,6 +32,6 @@ script:
 
 after_script:
     - BUILD_NUMBER=$((TRAVIS_JOB_ID - 1))
-    - echo $BUILD_NUMBER | sed "s/versionCode [1-9][[:digit:]]*/versionCode $BUILD_NUMBER/" build.gradle
+    - echo $BUILD_NUMBER | sed "s/versionCode [1-9][[:digit:]]*/versionCode $BUILD_NUMBER/" ./chromeadb/build.gradle > ./chromeadb/build.gradle
     - git commit -a -m "Committed by Travis-CI (build ${BUILD_NBR})"
     - git push
