@@ -4,6 +4,7 @@
 
 package io.github.importre.android.chromeadb;
 
+import android.annotation.SuppressLint;
 import android.app.Service;
 import android.content.Intent;
 import android.graphics.PixelFormat;
@@ -78,6 +79,7 @@ public class ChromeAdbService extends Service implements TailerListener {
         }
     }
 
+    @SuppressLint("NewApi")
     private void setCursorPosToCenter() {
         if (mWindowManager == null || mCursorImage == null) {
             return;
