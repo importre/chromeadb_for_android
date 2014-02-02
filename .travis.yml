@@ -30,6 +30,8 @@ script:
     - ./gradlew
     - ./gradlew test
 
+install: true
+
 after_script:
     - BUILD_NUMBER=$((TRAVIS_JOB_ID - 1))
     - echo $BUILD_NUMBER | sed "s/versionCode [1-9][[:digit:]]*/versionCode $BUILD_NUMBER/" ./chromeadb/build.gradle > ./chromeadb/build.gradle
