@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: robolectric-2.3-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/robolectric/robolectric/2.3-SNAPSHOT/robolectric-2.3-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
