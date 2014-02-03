@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ChromeADB.iml" filepath="$PROJECT_DIR$/ChromeADB.iml" />
       <module fileurl="file://$PROJECT_DIR$/chromeadb/chromeadb.iml" filepath="$PROJECT_DIR$/chromeadb/chromeadb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chromeadb_for_android.iml" filepath="$PROJECT_DIR$/chromeadb_for_android.iml" />
     </modules>
   </component>
 </project>
