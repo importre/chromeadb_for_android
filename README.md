@@ -5,6 +5,9 @@ ChromeADB for Android
 
 ChromeADB for Android is helper of [ChromeADB][chromeadb_github] on [Chrome Web Store][chromeadb_store].
 
+This app is for Android Developers.
+Currently, this app only shows a mouse cursor.
+
 
 License
 -------
