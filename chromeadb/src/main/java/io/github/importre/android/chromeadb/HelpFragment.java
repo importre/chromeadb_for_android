@@ -6,6 +6,8 @@ package io.github.importre.android.chromeadb;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.text.Html;
+import android.text.method.LinkMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,6 +27,8 @@ public class HelpFragment extends Fragment {
     }
 
     private void setContents(View view) {
-        TextView contents = (TextView) view.findViewById(R.id.contents);
+        TextView see = (TextView) view.findViewById(R.id.see_chromeadb);
+        see.setText(Html.fromHtml(getActivity().getString(R.string.help_desc2)));
+        see.setMovementMethod(LinkMovementMethod.getInstance());
     }
 }

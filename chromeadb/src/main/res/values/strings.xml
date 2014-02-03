@@ -16,5 +16,10 @@
     <string name="info_send_feedback">Send feedback</string>
     <string name="info_oss_license">Open-source licenses</string>
     <string name="apache_commons_io">Apache Commons IO</string>
+    <string name="help_title">ChromeADB for Android</string>
+    <string name="help_desc">is helper of ChromeADB on Chrome.</string>
+    <string name="help_desc1">This app is for Android Developers.\nCurrently, this app only shows a mouse cursor.</string>
+    <string name="help_desc2">* See <![CDATA[<a href=\"https://github.com/importre/chromeadb\">ChromeADB</a>]]></string>
+    <string name="send_feedback">Send feedback</string>
 
 </resources>

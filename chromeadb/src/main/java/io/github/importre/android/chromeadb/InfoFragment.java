@@ -81,7 +81,7 @@ public class InfoFragment extends Fragment implements View.OnClickListener {
         intent.putExtra(Intent.EXTRA_SUBJECT, activity.getString(R.string.feedback_subject));
 
         try {
-            startActivity(Intent.createChooser(intent, "Send feedback"));
+            startActivity(Intent.createChooser(intent, activity.getString(R.string.send_feedback)));
         } catch (Exception e) {
             Toast.makeText(activity, activity.getString(R.string.feedback_error_msg), Toast.LENGTH_SHORT).show();
         }

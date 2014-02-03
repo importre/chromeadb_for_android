@@ -3,5 +3,10 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="body_text_size">18sp</dimen>
+    <dimen name="default_height">56dp</dimen>
+    <dimen name="default_half_height">28dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="text_half_margin">8dp</dimen>
+    <dimen name="label_width">12dp</dimen>
 
 </resources>

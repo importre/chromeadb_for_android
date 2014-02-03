@@ -25,7 +25,7 @@
                 tools:text="0.1.0 (Build 1)"
                 android:id="@+id/version"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="@dimen/default_height"
                 android:background="@drawable/selector" />
 
             <TextView
@@ -37,7 +37,7 @@
             <Button
                 android:id="@+id/feedback"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="@dimen/default_height"
                 android:background="@drawable/selector"
                 android:text="@string/info_send_feedback" />
 
@@ -50,7 +50,7 @@
             <Button
                 android:id="@+id/license"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="@dimen/default_height"
                 android:background="@drawable/selector"
                 android:text="@string/info_oss_license" />
         </LinearLayout>
