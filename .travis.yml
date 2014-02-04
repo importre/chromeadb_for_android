@@ -29,7 +29,11 @@ script:
 install: true
 
 after_success:
-    - CUR=`pwd`| echo $CUR
+    - echo $TRAVIS_BUILD_NUMBER | sed "s/versionCode [1-9][[:digit:]]*/versionCode $TRAVIS_BUILD_NUMBER/" ./chromeadb/build.gradle > ./chromeadb/build.gradle
+    - git config user.email "chromeadb@gmail.com"
+    - git config user.name "travis-ci"
+    - git commit -a -m "Committed by Travis-CI (build ${TRAVIS_BUILD_NUMBER})"
+    - git push https://importre:${GH_TOKEN}@github.com/importre/chromeadb_for_android.git
 
 env:
   global:
