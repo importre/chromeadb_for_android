@@ -8,8 +8,8 @@ android {
     defaultConfig {
         minSdkVersion 7
         targetSdkVersion 18
-        versionCode 13
-        versionName "0.1.0"
+        versionCode 17
+        versionName "0.1.1"
     }
 
     buildTypes {
@@ -27,15 +27,13 @@ android {
 dependencies {
     compile 'com.android.support:support-v4:19.0.1'
     compile 'com.android.support:appcompat-v7:19.0.1'
-    compile 'org.apache.directory.studio:org.apache.commons.io:2.4'
+    compile files('libs/commons-io-2.4.jar')
 
     testCompile 'junit:junit:4.10'
-//    testCompile 'org.robolectric:robolectric:2.3-SNAPSHOT'
-    testCompile files ('libs/robolectric-2.3-SNAPSHOT.jar')
+    testCompile files('libs/robolectric-2.3-SNAPSHOT.jar')
     testCompile 'com.squareup:fest-android:1.0.+'
 
     instrumentTestCompile 'junit:junit:4.10'
-//    instrumentTestCompile 'org.robolectric:robolectric:2.3-SNAPSHOT'
-    instrumentTestCompile files ('libs/robolectric-2.3-SNAPSHOT.jar')
+    instrumentTestCompile files('libs/robolectric-2.3-SNAPSHOT.jar')
     instrumentTestCompile 'com.squareup:fest-android:1.0.+'
 }
