@@ -29,6 +29,8 @@ script:
 install: true
 
 after_success:
+    - git clone https://github.com/importre/chromeadb_for_android
+    - cd chromeadb_for_android
     - echo $TRAVIS_BUILD_NUMBER | sed "s/versionCode [1-9][[:digit:]]*/versionCode $TRAVIS_BUILD_NUMBER/" ./chromeadb/build.gradle > ./chromeadb/build.gradle
     - git config user.email "chromeadb@gmail.com"
     - git config user.name "travis-ci"
