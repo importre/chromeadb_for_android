@@ -27,16 +27,3 @@ script:
     - "./gradlew test"
 
 install: true
-
-after_success:
-    - git clone https://github.com/importre/chromeadb_for_android
-    - cd chromeadb_for_android
-    - echo $TRAVIS_BUILD_NUMBER | sed "s/versionCode [1-9][[:digit:]]*/versionCode $TRAVIS_BUILD_NUMBER/" ./chromeadb/build.gradle > ./chromeadb/build.gradle
-    - git config user.email "chromeadb@gmail.com"
-    - git config user.name "travis-ci"
-    - git commit -a -m "Committed by Travis-CI (build ${TRAVIS_BUILD_NUMBER})"
-    - git push https://importre:${GH_TOKEN}@github.com/importre/chromeadb_for_android.git
-
-env:
-  global:
-    secure: fgBkKZYhXGiJSetWJOtEyK8KRELO7exYGl2W0+rSPlFgEcD3+5eW5qfIBuY4qK3lYDH24b5YkPxVoprAS6qnZbg8GQQVzVyWqzUwTr5qgSCbsPEuqptIDPjU6+42V20Gy/ABUtjSurgtqBff9ByQWpx6rEYZSX/LqTcxhqG2vuI=
